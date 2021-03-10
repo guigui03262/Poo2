@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox spacing="10.0" style="-fx-background-color: #836FFF;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifsc.canoinhas.poo2.NN.QSController">
+   <children>
+      <HBox alignment="TOP_CENTER">
+         <children>
+            <Label text="New Notice" textFill="#2e0303" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Comic Sans MS Bold Italic" size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+         <children>
+            <Label text="N N" textFill="#2e0303" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Comic Sans MS Bold Italic" size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER">
+         <children>
+            <TextArea editable="false" text="A NN foi fundada em 2021 para trazer as melhores noticias até você, com uma equipe &#10;unida e sempre um bom humor.&#10;&#10;Venha fazer parte dessa familia.&#10;&#10;E-mail para contato:&#10;&#10;NNotice@gmail.com">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+            </TextArea>
+         </children></HBox>
+      <HBox alignment="BOTTOM_CENTER" VBox.vgrow="ALWAYS">
+         <children>
+            <Button fx:id="BVoltar" mnemonicParsing="false" onAction="#AVoltar" prefWidth="80.0" text="Voltar" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets bottom="10.0" right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="BSair" mnemonicParsing="false" onAction="#ASair" prefWidth="80.0" text="Sair" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets bottom="10.0" />
+               </HBox.margin></Button>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="BOTTOM_RIGHT" VBox.vgrow="ALWAYS">
+         <children>
+            <Label text="v.01 2021" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Comic Sans MS Bold Italic" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>

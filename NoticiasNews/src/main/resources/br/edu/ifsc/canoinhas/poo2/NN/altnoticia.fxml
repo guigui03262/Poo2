@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="577.0" prefWidth="362.0" style="-fx-background-color: #836FFF;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifsc.canoinhas.poo2.NN.controllers.AltNoticiaController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label text="New Notice">
+               <font>
+                  <Font name="Comic Sans MS Bold Italic" size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label text="Alterar">
+               <font>
+                  <Font name="Comic Sans MS Bold Italic" size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label text="Titulo">
+               <HBox.margin>
+                  <Insets left="10.0" right="30.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfTitulo" prefHeight="25.0" prefWidth="231.0">
+               <HBox.margin>
+                  <Insets left="20.0" right="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="109.0" prefWidth="362.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label text="Descrição">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="taDescricao" prefHeight="79.0" prefWidth="231.0">
+               <HBox.margin>
+                  <Insets left="30.0" right="10.0" />
+               </HBox.margin>
+            </TextArea>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="155.0" prefWidth="362.0" VBox.vgrow="ALWAYS">
+         <children>
+            <ListView fx:id="lvGenero" prefHeight="200.0" prefWidth="200.0">
+               <HBox.margin>
+                  <Insets left="5.0" top="5.0" />
+               </HBox.margin>
+            </ListView>
+            <ListView fx:id="lvGenADD" prefHeight="200.0" prefWidth="200.0">
+               <HBox.margin>
+                  <Insets left="1.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </ListView>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="56.0" prefWidth="362.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Button fx:id="btADDGen" mnemonicParsing="false" onAction="#AAddGen" text="Adicionar Genero" />
+            <Button fx:id="btRemoveGen" mnemonicParsing="false" onAction="#ARemoveerGen" text="Remover Genero">
+               <HBox.margin>
+                  <Insets left="1.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="47.0" prefWidth="362.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Button fx:id="btAlterar" mnemonicParsing="false" onAction="#AAlterar" text="Alterar" />
+            <Button fx:id="btVoltar" mnemonicParsing="false" onAction="#AVoltar" text="Voltar">
+               <HBox.margin>
+                  <Insets left="3.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

@@ -1,35 +1,28 @@
 package br.edu.ifsc.canoinhas.poo2.NN;
 
-import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
-
 import java.io.IOException;
 
+import javafx.application.Application;
+import javafx.stage.Stage;
 public class App extends Application {
 
-    private static Scene scene;
+    private static Stage stage;
 
     @Override
-    public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("principal"), 800, 600);
-        stage.setScene(scene);
-        stage.show();
+	public void start(Stage stge) {
+		stage = stge;
+		stage.setScene(FXMLUtil.loadScene("principal"));
+		stage.setTitle("Banco");
+		stage.show();
+	}
+
+    public static void setRoot(String fxml) throws IOException {
+    	stage.setScene(FXMLUtil.loadScene(fxml));
     }
 
-    static void setRoot(String fxml) throws IOException {
-        scene.setRoot(loadFXML(fxml));
-    }
-
-    private static Parent loadFXML(String fxml) throws IOException {
+    /*private static Parent loadFXML(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml + ".fxml"));
         return fxmlLoader.load();
-    }
-
-    public static void main(String[] args) {
-        launch();
-    }
+    }*/
 
 }

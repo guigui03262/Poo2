@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox spacing="10.0" style="-fx-background-color: #836FFF;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifsc.canoinhas.poo2.NN.controllers.AddNoticiaController">
+   <children>
+      <HBox alignment="TOP_CENTER">
+         <children>
+            <Label text="New Notice" textFill="#2e0303" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Comic Sans MS Bold Italic" size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_CENTER" layoutX="20.0" layoutY="20.0">
+         <children>
+            <Label text="ADD Noticia" textFill="#2e0303" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Comic Sans MS Bold Italic" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="20.0" layoutY="308.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label text="Titulo: ">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin></Label>
+            <TextField fx:id="TFTitulo" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+         <children>
+            <Label text="Descrição:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <padding>
+                  <Insets right="10.0" />
+               </padding></Label>
+            <TextArea fx:id="TADescricao" prefHeight="86.0" prefWidth="194.0" />
+         </children></HBox>
+      <HBox alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="Genero: ">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Button fx:id="btAddGenero" mnemonicParsing="false" onAction="#AAddGenero" text="ADD Genero" />
+               </children>
+            </VBox>
+            <ListView fx:id="LVGenero" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" spacing="10.0" />
+         </children>
+      </HBox>
+      <HBox alignment="BOTTOM_CENTER" VBox.vgrow="ALWAYS">
+         <children>
+            <Button fx:id="BAdd" layoutX="48.0" layoutY="10.0" mnemonicParsing="false" onAction="#Aadd" prefWidth="80.0" text="ADD">
+               <HBox.margin>
+                  <Insets bottom="10.0" right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="BVoltar" mnemonicParsing="false" onAction="#AVoltar" prefWidth="80.0" text="Voltar" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets bottom="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="BOTTOM_RIGHT">
+         <children>
+            <Label text="v.01 2021" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Comic Sans MS Bold Italic" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>
